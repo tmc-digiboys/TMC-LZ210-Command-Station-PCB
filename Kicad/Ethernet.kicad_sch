@@ -1,0 +1,1163 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "bd15ce3b-de14-4765-be3e-cebcc6aff419")
+	(paper "A4")
+	(title_block
+		(title "LZ210-TMC")
+		(date "2026-07-17")
+		(rev "V2.1")
+		(company "Twentse Modelspoorweg Club (TMC)")
+		(comment 1 "Licensed under CC-BY-4.0 — https://creativecommons.org/licenses/by/4.0/")
+		(comment 2 "Copyright (c) 2026: Aiko Pras / Rob van Hoeijen")
+		(comment 3 "Ethernet, USB, XPressNet, Z21, Loconet (T & B), RS-Bus, CDE, DRV8874 (2,5A)")
+		(comment 4 "Digital Command Control (DCC) - Command station")
+	)
+	(lib_symbols
+		(symbol "AP_Library:Module-W5500"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 14.732 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Module-W5500"
+				(at -0.508 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "AP_Library:Module-W5500"
+				(at 1.016 -12.954 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Ethernet Module"
+				(at 0.762 -14.986 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Ethernet Module"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Module-W5500_0_1"
+				(rectangle
+					(start -10.16 11.43)
+					(end 10.16 -11.43)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Module-W5500_1_1"
+				(pin power_in line
+					(at -12.7 -3.81 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 -6.35 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 6.35 180)
+					(length 2.54)
+					(name "MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 3.81 180)
+					(length 2.54)
+					(name "SCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 1.27 180)
+					(length 2.54)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 -3.81 180)
+					(length 2.54)
+					(name "INT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 8.89 180)
+					(length 2.54)
+					(name "MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 -7.62 180)
+					(length 2.54)
+					(name "RST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -12.7 0 0)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 8.89 0)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 6.35 0)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 -8.89 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 132.08 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2488017f-72fc-425f-be82-c3d31abae9af")
+	)
+	(junction
+		(at 132.08 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40f2927b-9155-4eda-8d52-abfd22f2c7cc")
+	)
+	(junction
+		(at 132.08 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b56e62c-0720-40b6-bc5d-1abc3939e642")
+	)
+	(junction
+		(at 132.08 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9da01780-e98c-489f-baa9-bf3d3d64864a")
+	)
+	(junction
+		(at 132.08 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de81d382-f56a-449c-9a65-339b30cbeefc")
+	)
+	(wire
+		(pts
+			(xy 132.08 87.63) (xy 139.7 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0afd5062-a6da-4030-b06d-5708c75d5df7")
+	)
+	(wire
+		(pts
+			(xy 132.08 100.33) (xy 132.08 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10acc909-a95a-4707-86d9-61c8db032600")
+	)
+	(wire
+		(pts
+			(xy 165.1 87.63) (xy 167.64 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "173c7974-1656-43ca-887c-41a265e139b2")
+	)
+	(wire
+		(pts
+			(xy 132.08 87.63) (xy 132.08 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20ddc731-873d-407d-a632-b9d2ec0c2982")
+	)
+	(wire
+		(pts
+			(xy 132.08 95.25) (xy 132.08 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fbc2e96-5c15-4b2b-98b6-8f7123c2fff7")
+	)
+	(wire
+		(pts
+			(xy 132.08 100.33) (xy 139.7 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bec8dc5-e223-4333-9c13-8825e148fb1b")
+	)
+	(wire
+		(pts
+			(xy 165.1 85.09) (xy 167.64 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58cf1468-c3ec-4d92-906d-9d1a9f555efb")
+	)
+	(wire
+		(pts
+			(xy 165.1 90.17) (xy 167.64 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "615c6faf-5d90-478f-ae9e-542127d48b25")
+	)
+	(wire
+		(pts
+			(xy 132.08 85.09) (xy 139.7 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77e2ba84-652c-4242-8440-efa138ea1099")
+	)
+	(wire
+		(pts
+			(xy 165.1 92.71) (xy 167.64 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a7281d1-34e6-47bd-9f39-1ca249fa7a01")
+	)
+	(wire
+		(pts
+			(xy 132.08 102.87) (xy 132.08 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84adc3b8-99be-4917-a342-b91c3586b58c")
+	)
+	(wire
+		(pts
+			(xy 132.08 102.87) (xy 139.7 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85bef366-9f2e-4db0-b4d8-3fba5f163fae")
+	)
+	(wire
+		(pts
+			(xy 165.1 97.79) (xy 167.64 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "897a0b24-6c7c-46ca-9aa3-98def9d2f554")
+	)
+	(wire
+		(pts
+			(xy 132.08 87.63) (xy 132.08 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fb1b3ee-4f25-428e-b7bb-1296907d869f")
+	)
+	(wire
+		(pts
+			(xy 132.08 97.79) (xy 139.7 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b5d94da-5506-466d-80b2-93b7c3f3c4ce")
+	)
+	(wire
+		(pts
+			(xy 132.08 81.28) (xy 132.08 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b46b4bd1-75bb-4d9f-8039-fd7201b390ec")
+	)
+	(wire
+		(pts
+			(xy 165.1 101.6) (xy 167.64 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba0120f8-299d-4f69-87ff-3f987597f34e")
+	)
+	(wire
+		(pts
+			(xy 132.08 107.95) (xy 132.08 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb67feb6-cf6d-45a9-8975-8e05ca7877ea")
+	)
+	(hierarchical_label "W5500-CS"
+		(shape input)
+		(at 167.64 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1ae133ae-f217-4153-b11d-f0e7fb920a54")
+	)
+	(hierarchical_label "W5500-RST"
+		(shape input)
+		(at 167.64 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "45977c3c-bf64-49e4-a99a-3ed541f19dab")
+	)
+	(hierarchical_label "W5500-SCLK"
+		(shape input)
+		(at 167.64 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4dc93bbe-abff-45c4-abee-27f90b49fe0a")
+	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 132.08 81.28 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left)
+		)
+		(uuid "677ccd53-4a15-40e1-bd6d-b0b94067a4b2")
+	)
+	(hierarchical_label "W5500-MISO"
+		(shape output)
+		(at 167.64 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cac2402c-0af2-473d-b90f-761cdbf380bd")
+	)
+	(hierarchical_label "W5500-INT"
+		(shape output)
+		(at 167.64 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e96f404c-02fa-4ada-a25d-a0eae6945ed6")
+	)
+	(hierarchical_label "W5500-MOSI"
+		(shape input)
+		(at 167.64 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f4e7f2da-83ae-45fa-9cc3-4e421c7b9ddf")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9525bff9-c932-4cc6-9462-7862dbfe7928")
+		(property "Reference" "#PWR0402"
+			(at 132.08 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 132.08 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2073a1e0-a5b9-4f61-9cbf-c051be3348f7")
+		)
+		(instances
+			(project "TMC-Centrale-V2.1"
+				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/32f51499-27df-4aa2-9dd9-9fcc04eaebff"
+					(reference "#PWR0402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "AP_Library:Module-W5500")
+		(at 152.4 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca69e506-be5e-4ecf-9811-9a3a2eb34347")
+		(property "Reference" "U401"
+			(at 152.4 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Module-W5500"
+			(at 152.4 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AP_Library:Module-W5500"
+			(at 152.4 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ethernet Module"
+			(at 152.4 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Costs" "5,00"
+			(at 152.4 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "077f9b92-85b7-4d76-a349-b9f33fa9e892")
+		)
+		(pin "1"
+			(uuid "9739b54d-f03c-4b48-9d76-3e4d985e11e0")
+		)
+		(pin "4"
+			(uuid "3ba5ce8c-f09e-4036-a9c1-4847995fa941")
+		)
+		(pin "3"
+			(uuid "2d9a2d6d-38d8-4612-992a-1520fa7d1065")
+		)
+		(pin "12"
+			(uuid "a6ea2266-1ae7-40ba-90aa-e08cfbf98c52")
+		)
+		(pin "11"
+			(uuid "2e1719a9-0522-4ff2-b6ca-47e6b9c24e41")
+		)
+		(pin "10"
+			(uuid "7b74bc36-0cfd-4dc6-a400-9e2814977be3")
+		)
+		(pin "9"
+			(uuid "de983c83-315a-4ce2-9af7-c628d5d5ac1c")
+		)
+		(pin "8"
+			(uuid "5934a78f-a946-4978-a99a-146b7a894e25")
+		)
+		(pin "5"
+			(uuid "bf2bc79e-0fca-4cae-a257-f4e77a276222")
+		)
+		(pin "6"
+			(uuid "8c19be50-35c0-4a00-9ace-130f9d8b0d76")
+		)
+		(pin "7"
+			(uuid "cf4f1185-268c-46e5-b7aa-31952a287c5a")
+		)
+		(instances
+			(project "TMC-Centrale-V2.1"
+				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/32f51499-27df-4aa2-9dd9-9fcc04eaebff"
+					(reference "U401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 132.08 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e154cde5-ff88-4ecc-ab31-f83802111faf")
+		(property "Reference" "C401"
+			(at 125.73 90.424 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 124.206 94.488 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+			(at 132.08 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 132.08 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "89fc3ab9-a2f9-4065-8f52-36608fa9c4c5")
+		)
+		(pin "1"
+			(uuid "bc628a62-0c1f-4d45-a1de-0a1413659317")
+		)
+		(instances
+			(project "TMC-Centrale-V2.1"
+				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/32f51499-27df-4aa2-9dd9-9fcc04eaebff"
+					(reference "C401")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
