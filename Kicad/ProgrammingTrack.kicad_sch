@@ -3309,7 +3309,7 @@
 			(uuid "56634b8a-b42b-4a8e-96e1-8b831f807ea6")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/abf70eea-e783-4d34-9bb0-2d965e6e8b29"
 					(reference "#PWR0801")
 					(unit 1)
@@ -3386,7 +3386,7 @@
 			(uuid "97deb7ca-bf62-4de0-abcf-a8ea4155df16")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/abf70eea-e783-4d34-9bb0-2d965e6e8b29"
 					(reference "#PWR0805")
 					(unit 1)
@@ -3463,7 +3463,7 @@
 			(uuid "be8f48d2-6692-40e0-aed7-d6287e858f34")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/abf70eea-e783-4d34-9bb0-2d965e6e8b29"
 					(reference "#PWR0804")
 					(unit 1)
@@ -3581,7 +3581,7 @@
 			(uuid "0ba03faf-09e1-498d-b192-03196d058931")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/abf70eea-e783-4d34-9bb0-2d965e6e8b29"
 					(reference "U801")
 					(unit 1)
@@ -3663,7 +3663,7 @@
 			(uuid "7711f1fc-aeb2-4c47-a836-e276f87ac312")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/abf70eea-e783-4d34-9bb0-2d965e6e8b29"
 					(reference "R801")
 					(unit 1)
@@ -3744,7 +3744,7 @@
 			(uuid "115014d1-6f4f-44e6-a550-3aec47e76cac")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/abf70eea-e783-4d34-9bb0-2d965e6e8b29"
 					(reference "J801")
 					(unit 1)
@@ -3827,7 +3827,7 @@
 			(uuid "81035833-8433-4f0e-98c6-fb791031070b")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/abf70eea-e783-4d34-9bb0-2d965e6e8b29"
 					(reference "JP802")
 					(unit 1)
@@ -3904,7 +3904,7 @@
 			(uuid "b1fe3394-6511-43fe-9ba8-f48862554059")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/abf70eea-e783-4d34-9bb0-2d965e6e8b29"
 					(reference "#PWR0802")
 					(unit 1)
@@ -3986,7 +3986,7 @@
 			(uuid "4343f680-c577-4659-892b-f9a7ce30e382")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/abf70eea-e783-4d34-9bb0-2d965e6e8b29"
 					(reference "R802")
 					(unit 1)
@@ -4063,7 +4063,7 @@
 			(uuid "70e490ec-468c-40b1-b2ce-33c6a3cf613a")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/abf70eea-e783-4d34-9bb0-2d965e6e8b29"
 					(reference "#PWR0803")
 					(unit 1)
@@ -4149,7 +4149,7 @@
 			(uuid "ccb34580-cc9f-4586-9b10-199f214be7d1")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/abf70eea-e783-4d34-9bb0-2d965e6e8b29"
 					(reference "JP801")
 					(unit 1)

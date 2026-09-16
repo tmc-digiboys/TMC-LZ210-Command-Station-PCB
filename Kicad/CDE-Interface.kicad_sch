@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "LZ210-TMC")
-		(date "2026-07-17")
-		(rev "V2.1")
+		(date "2026-09-16")
+		(rev "V2.2")
 		(company "Twentse Modelspoorweg Club (TMC)")
 		(comment 1 "Licensed under CC-BY-4.0 — https://creativecommons.org/licenses/by/4.0/")
 		(comment 2 "Copyright (c) 2026: Aiko Pras / Rob van Hoeijen")
@@ -882,172 +882,6 @@
 				)
 			)
 			(symbol "D_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:D_Zener"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Zener"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Zener diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "D_Zener_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Zener_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -2072,6 +1906,19 @@
 		)
 		(uuid "505c9b7c-bd96-4565-ba9b-db53d3d6ced0")
 	)
+	(text "V2.2: 3V3 zener removed. \nR704/R705 values decreased, C701 increased"
+		(exclude_from_sim no)
+		(at 15.24 175.006 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "64dee72f-a7e4-49c4-b233-6d100a4c66c1")
+	)
 	(text "*DRV8871: only PWM\n"
 		(exclude_from_sim no)
 		(at 18.288 33.782 0)
@@ -2082,12 +1929,6 @@
 			(justify left top)
 		)
 		(uuid "a6a33cae-15f8-45fa-a915-6bc47fe1710d")
-	)
-	(junction
-		(at 125.73 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "010cf7ee-ee2f-49c1-ab86-7608de2710b6")
 	)
 	(junction
 		(at 101.6 88.9)
@@ -2114,28 +1955,10 @@
 		(uuid "1a363699-aff1-4bab-af63-da09c2f8d0ce")
 	)
 	(junction
-		(at 120.65 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3a9dbf88-a7c6-4a5e-8fbe-8eafc1444fc2")
-	)
-	(junction
-		(at 120.65 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f5fa1c5-e52c-4f7a-9592-dc6d92490591")
-	)
-	(junction
 		(at 104.14 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "84f2ecde-f4b8-4b32-9401-e6b66dcfadf0")
-	)
-	(junction
-		(at 133.35 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "93aeba72-4880-4e7d-a376-731eaa7176b0")
 	)
 	(junction
 		(at 143.51 129.54)
@@ -2156,7 +1979,13 @@
 		(uuid "e4c69621-eee6-48ed-b978-68359480afab")
 	)
 	(junction
-		(at 107.95 139.7)
+		(at 133.35 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee575dbe-6956-4fce-a3db-ad4bac4bc005")
+	)
+	(junction
+		(at 116.84 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9386b88-1cf3-41b7-a872-1f0ebff137e5")
@@ -2183,7 +2012,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 151.13) (xy 107.95 151.13)
+			(xy 116.84 151.13) (xy 133.35 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2243,7 +2072,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 139.7) (xy 120.65 139.7)
+			(xy 116.84 139.7) (xy 133.35 139.7)
 		)
 		(stroke
 			(width 0)
@@ -2323,7 +2152,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 151.13) (xy 125.73 152.4)
+			(xy 133.35 151.13) (xy 133.35 152.4)
 		)
 		(stroke
 			(width 0)
@@ -2343,36 +2172,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 139.7) (xy 107.95 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bf5a892-5a09-41d1-91c4-4a11f52b01a1")
-	)
-	(wire
-		(pts
-			(xy 120.65 148.59) (xy 120.65 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7cedee7f-df60-4bbb-bb54-03eab921a2a6")
-	)
-	(wire
-		(pts
-			(xy 120.65 139.7) (xy 120.65 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ab2294e-ff85-41d2-b6d2-a77064a2f4c1")
-	)
-	(wire
-		(pts
 			(xy 78.74 58.42) (xy 83.82 58.42)
 		)
 		(stroke
@@ -2380,16 +2179,6 @@
 			(type default)
 		)
 		(uuid "8afe7c62-4ac6-4f16-be06-ad111f395549")
-	)
-	(wire
-		(pts
-			(xy 133.35 151.13) (xy 125.73 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b7bf46a-c295-44eb-a141-e75426ee326d")
 	)
 	(wire
 		(pts
@@ -2423,7 +2212,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 139.7) (xy 107.95 142.24)
+			(xy 116.84 139.7) (xy 116.84 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2493,16 +2282,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 151.13) (xy 120.65 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1c9c3fb-b61f-4af1-8e42-dcaa70757cef")
-	)
-	(wire
-		(pts
 			(xy 143.51 142.24) (xy 143.51 151.13)
 		)
 		(stroke
@@ -2523,7 +2302,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 139.7) (xy 99.06 139.7)
+			(xy 116.84 139.7) (xy 107.95 139.7)
 		)
 		(stroke
 			(width 0)
@@ -2663,7 +2442,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 147.32) (xy 107.95 151.13)
+			(xy 116.84 147.32) (xy 116.84 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3469,7 +3248,7 @@
 	)
 	(hierarchical_label "ShortBoosterExtern"
 		(shape output)
-		(at 99.06 139.7 180)
+		(at 107.95 139.7 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3564,7 +3343,7 @@
 			(uuid "7c999f49-966f-4c2b-98fa-53d2f99070c0")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "#PWR0703")
 					(unit 1)
@@ -3650,7 +3429,7 @@
 			(uuid "331178cb-5e0c-4bd2-b471-7bc78500da36")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "JP701")
 					(unit 1)
@@ -3727,7 +3506,7 @@
 			(uuid "d6ea0a0f-9f89-4824-93f6-31e7bf7c9865")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "#PWR0704")
 					(unit 1)
@@ -3758,7 +3537,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120K"
+		(property "Value" "56K"
 			(at 130.556 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3809,7 +3588,7 @@
 			(uuid "63814515-9aee-4bc2-880f-94ce6ec21cdd")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "R704")
 					(unit 1)
@@ -3840,7 +3619,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47K"
+		(property "Value" "18K"
 			(at 130.556 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3891,92 +3670,9 @@
 			(uuid "b37aa27c-032a-4fa6-950a-84ad7e69a889")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "R705")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Zener")
-		(at 120.65 144.78 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "448fa273-3764-429a-8687-6a3ee38ceab6")
-		(property "Reference" "D702"
-			(at 118.11 143.5099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3V3"
-			(at 118.11 146.0499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "AP_Library:DO35-7"
-			(at 120.65 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 120.65 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 120.65 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c5686c36-5380-4a5f-805d-1b07cf0279b4")
-		)
-		(pin "2"
-			(uuid "73f3f8e5-87bb-4222-8d8f-04b320f2fede")
-		)
-		(instances
-			(project "TMC-Centrale-V2.1"
-				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
-					(reference "D702")
 					(unit 1)
 				)
 			)
@@ -4057,7 +3753,7 @@
 			(uuid "42a87f3f-3d8f-49cc-90c3-45f7f80aa800")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "J701")
 					(unit 1)
@@ -4088,7 +3784,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47nF"
+		(property "Value" "100nF"
 			(at 149.86 141.986 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4139,7 +3835,7 @@
 			(uuid "518f8081-4a7b-4b9e-a31f-bacf3803f43d")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "C701")
 					(unit 1)
@@ -4221,7 +3917,7 @@
 			(uuid "626ee541-c7f0-4883-863f-e737697d58df")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "R702")
 					(unit 1)
@@ -4231,7 +3927,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 125.73 152.4 0)
+		(at 133.35 152.4 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4242,7 +3938,7 @@
 		(dnp no)
 		(uuid "9179a3ff-b4c8-4085-a6e3-75e761d5396f")
 		(property "Reference" "#PWR0706"
-			(at 125.73 158.75 0)
+			(at 133.35 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4253,7 +3949,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 125.73 156.464 0)
+			(at 133.35 156.464 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4263,7 +3959,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 152.4 0)
+			(at 133.35 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4274,7 +3970,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 152.4 0)
+			(at 133.35 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4285,7 +3981,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 152.4 0)
+			(at 133.35 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4299,7 +3995,7 @@
 			(uuid "7c584dce-909d-46fb-8196-8bf071a88c9e")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "#PWR0706")
 					(unit 1)
@@ -4309,7 +4005,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 107.95 144.78 0)
+		(at 116.84 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4319,7 +4015,7 @@
 		(dnp no)
 		(uuid "a6e9b28f-d399-49f2-9d7a-0efa7fbddeb1")
 		(property "Reference" "C702"
-			(at 101.6 142.494 0)
+			(at 110.49 142.494 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4330,7 +4026,7 @@
 			)
 		)
 		(property "Value" "100pF"
-			(at 100.076 146.558 0)
+			(at 108.966 146.558 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4341,7 +4037,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-			(at 107.95 144.78 0)
+			(at 116.84 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4352,7 +4048,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 144.78 0)
+			(at 116.84 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4363,7 +4059,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 107.95 144.78 0)
+			(at 116.84 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4380,7 +4076,7 @@
 			(uuid "d7347699-3318-4046-a948-2b09b95bc51c")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "C702")
 					(unit 1)
@@ -4498,7 +4194,7 @@
 			(uuid "71734528-a45a-4809-bf30-e121c5fb205e")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "U701")
 					(unit 1)
@@ -4577,7 +4273,7 @@
 			(uuid "dd18a2a1-4751-4139-a3e7-7afef1cab8b7")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "R701")
 					(unit 1)
@@ -4654,7 +4350,7 @@
 			(uuid "b2c3708e-ddac-43c4-879f-d0ccc4c90d46")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "#PWR0705")
 					(unit 1)
@@ -4736,7 +4432,7 @@
 			(uuid "aedb7eb3-a686-4f42-a8f6-abbae8a2b1d0")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "R703")
 					(unit 1)
@@ -4813,7 +4509,7 @@
 			(uuid "eaa233c6-a816-4042-969a-504a66cbe5f4")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "#PWR0702")
 					(unit 1)
@@ -4896,7 +4592,7 @@
 			(uuid "3dbd733a-8a3c-4d17-9812-6db38df1a08d")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "JP702")
 					(unit 1)
@@ -5001,7 +4697,7 @@
 			(uuid "7b5c6816-d9a7-4395-a1a3-4d0b221b3a64")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "D701")
 					(unit 1)
@@ -5078,7 +4774,7 @@
 			(uuid "b9b8fef5-ecec-48da-905d-9ef25bfa145c")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/02bc5614-a4ca-4e23-a368-07beb419d44b"
 					(reference "#PWR0701")
 					(unit 1)

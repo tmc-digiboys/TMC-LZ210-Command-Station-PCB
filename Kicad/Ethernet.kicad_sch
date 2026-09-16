@@ -950,7 +950,7 @@
 			(uuid "2073a1e0-a5b9-4f61-9cbf-c051be3348f7")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/32f51499-27df-4aa2-9dd9-9fcc04eaebff"
 					(reference "#PWR0402")
 					(unit 1)
@@ -1071,7 +1071,7 @@
 			(uuid "cf4f1185-268c-46e5-b7aa-31952a287c5a")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/32f51499-27df-4aa2-9dd9-9fcc04eaebff"
 					(reference "U401")
 					(unit 1)
@@ -1152,7 +1152,7 @@
 			(uuid "bc628a62-0c1f-4d45-a1de-0a1413659317")
 		)
 		(instances
-			(project "TMC-Centrale-V2.1"
+			(project "TMC-Centrale-V2.2"
 				(path "/43e8c236-8f1f-4770-bb04-aef60bd8cc9f/32f51499-27df-4aa2-9dd9-9fcc04eaebff"
 					(reference "C401")
 					(unit 1)

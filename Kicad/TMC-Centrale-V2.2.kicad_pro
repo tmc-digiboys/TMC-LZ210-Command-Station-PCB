@@ -519,7 +519,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "TMC-Centrale-V2.1.kicad_pro",
+    "filename": "TMC-Centrale-V2.2.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -716,8 +716,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "TMC-Centrale-V2.1.kicad_sch",
-        "name": "TMC-Centrale-V2.1",
+        "filename": "TMC-Centrale-V2.2.kicad_sch",
+        "name": "TMC-Centrale-V2.2",
         "uuid": "43e8c236-8f1f-4770-bb04-aef60bd8cc9f"
       }
     ],
@@ -727,7 +727,7 @@
   "sheets": [
     [
       "43e8c236-8f1f-4770-bb04-aef60bd8cc9f",
-      "TMC-Centrale-V2.1"
+      "TMC-Centrale-V2.2"
     ],
     [
       "a93848cb-f5c3-41f7-9358-7d9ec465baf5",
