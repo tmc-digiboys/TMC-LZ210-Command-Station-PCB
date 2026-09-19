@@ -273,7 +273,7 @@ The PCB is designed for the following connectors:
 
 ## Software
 
-The firmware for this command station can be found in its own GitHub repository, and is therefore not discussed further here (link — **TODO**)
+The firmware for this command station can be found in its own GitHub repository, and is therefore not discussed further at: [https://github.com/tmc-digiboys/TMC-LZ210-Command-Station](https://github.com/tmc-digiboys/TMC-LZ210-Command-Station)
 
 
 ## Comparison with other command stations
