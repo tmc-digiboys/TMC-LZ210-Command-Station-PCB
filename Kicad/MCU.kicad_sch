@@ -3908,6 +3908,14 @@
 		(uuid "1d694ea4-2b74-443c-ac72-89de0d1b5f96")
 	)
 	(no_connect
+		(at 127 86.36)
+		(uuid "41dd040e-1c01-4a8d-932d-e95976f5012f")
+	)
+	(no_connect
+		(at 274.32 92.71)
+		(uuid "612c7004-9250-450f-b62c-ea50e2c5b4fd")
+	)
+	(no_connect
 		(at 175.26 30.48)
 		(uuid "822013b5-679d-4489-b7da-ef4db290776f")
 	)
@@ -3926,6 +3934,10 @@
 	(no_connect
 		(at 175.26 39.37)
 		(uuid "ca53abc5-86e7-4c8f-b366-ac9885917078")
+	)
+	(no_connect
+		(at 175.26 92.71)
+		(uuid "e9ed1cba-576f-4a7b-94f7-e683f88e250b")
 	)
 	(bus_entry
 		(at 116.84 129.54)
@@ -4416,16 +4428,6 @@
 			(type default)
 		)
 		(uuid "4957d479-f23e-44b9-9a54-bb6f004041ec")
-	)
-	(wire
-		(pts
-			(xy 121.92 86.36) (xy 127 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49e26a0c-b1b3-48c9-8811-7bc271ff0690")
 	)
 	(wire
 		(pts
@@ -5059,16 +5061,6 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 92.71) (xy 274.32 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b85427ed-7a9a-4ba3-9770-be6c8bfb8db5")
-	)
-	(wire
-		(pts
 			(xy 121.92 104.14) (xy 127 104.14)
 		)
 		(stroke
@@ -5336,16 +5328,6 @@
 			(type default)
 		)
 		(uuid "de9fa45b-f6a2-4051-872b-e9801d46859a")
-	)
-	(wire
-		(pts
-			(xy 175.26 92.71) (xy 179.07 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dea5e202-0a43-41e5-8630-8cf07aa455b1")
 	)
 	(wire
 		(pts
@@ -5893,17 +5875,6 @@
 		)
 		(uuid "59d834a6-68f0-4117-9c90-04615fb2c8ab")
 	)
-	(hierarchical_label "DCC-MON"
-		(shape input)
-		(at 179.07 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5dd26bbc-fe0a-4b36-9f1e-7eb2dfdca5f6")
-	)
 	(hierarchical_label "W5500-INT"
 		(shape input)
 		(at 121.92 104.14 180)
@@ -6042,17 +6013,6 @@
 		)
 		(uuid "a57e3f49-634a-491f-9904-604b938257f5")
 	)
-	(hierarchical_label "LN-ENABLE"
-		(shape output)
-		(at 121.92 86.36 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ad33fa0f-ef88-4332-a511-0af5463d5ca4")
-	)
 	(hierarchical_label "XpressNetTX"
 		(shape output)
 		(at 121.92 78.74 180)
@@ -6099,17 +6059,6 @@
 			(justify right)
 		)
 		(uuid "bbd9d38f-22d1-4f27-bf2f-fd1f6a36b7ad")
-	)
-	(hierarchical_label "DCC-MON"
-		(shape input)
-		(at 271.78 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bfdf67d8-6ec8-4d1c-9cfa-b34c7919bc97")
 	)
 	(hierarchical_label "~{CDE_FAULT}"
 		(shape input)

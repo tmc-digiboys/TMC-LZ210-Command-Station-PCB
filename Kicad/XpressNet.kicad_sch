@@ -2527,7 +2527,7 @@
 		(uuid "ae87f0e2-c723-451d-9486-6ac5610b76c0")
 	)
 	(hierarchical_label "XpressNetRX"
-		(shape input)
+		(shape output)
 		(at 250.19 67.31 180)
 		(effects
 			(font
@@ -2574,7 +2574,7 @@
 		(uuid "5bf3033b-fd54-4d77-99b5-d7ffc477e347")
 	)
 	(hierarchical_label "XpressNetRX"
-		(shape input)
+		(shape output)
 		(at 102.87 63.5 180)
 		(effects
 			(font

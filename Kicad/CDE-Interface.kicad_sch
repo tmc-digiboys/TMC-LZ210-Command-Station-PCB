@@ -1919,6 +1919,20 @@
 		)
 		(uuid "64dee72f-a7e4-49c4-b233-6d100a4c66c1")
 	)
+	(text "D"
+		(exclude_from_sim no)
+		(at 149.3806 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "91e66c7e-d03f-48e7-a28d-bfc30b00eaf5")
+	)
 	(text "*DRV8871: only PWM\n"
 		(exclude_from_sim no)
 		(at 18.288 33.782 0)
@@ -1929,6 +1943,20 @@
 			(justify left top)
 		)
 		(uuid "a6a33cae-15f8-45fa-a915-6bc47fe1710d")
+	)
+	(text "C"
+		(exclude_from_sim no)
+		(at 149.352 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "f53de6ca-35b8-482d-81b7-fe4c3d1bd2f7")
 	)
 	(junction
 		(at 101.6 88.9)
@@ -1955,6 +1983,12 @@
 		(uuid "1a363699-aff1-4bab-af63-da09c2f8d0ce")
 	)
 	(junction
+		(at 113.03 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c236ad1-7416-4a8c-a2ff-6f0f16b1759e")
+	)
+	(junction
 		(at 104.14 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1965,6 +1999,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4faf872-e2b6-4f84-a9a6-1f810f1892f0")
+	)
+	(junction
+		(at 113.03 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b25a3833-5cc3-4260-94db-6df61bfcc390")
 	)
 	(junction
 		(at 31.75 82.55)
@@ -2012,6 +2052,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 72.39) (xy 113.03 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11b804c6-036b-4b0f-8a29-e5cc5364a3f9")
+	)
+	(wire
+		(pts
 			(xy 116.84 151.13) (xy 133.35 151.13)
 		)
 		(stroke
@@ -2032,6 +2082,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 71.12) (xy 113.03 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "235f4596-894c-4577-99ed-93e816cc3242")
+	)
+	(wire
+		(pts
 			(xy 59.69 92.71) (xy 59.69 93.98)
 		)
 		(stroke
@@ -2049,6 +2109,16 @@
 			(type default)
 		)
 		(uuid "2acdf241-744d-45e5-a3fe-5d466886fe17")
+	)
+	(wire
+		(pts
+			(xy 113.03 67.31) (xy 133.35 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b394653-eaa7-4598-aaf0-60c598e9fb5f")
 	)
 	(wire
 		(pts
@@ -2092,6 +2162,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 66.04) (xy 113.03 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4243a29f-4dd1-4ddf-a4e5-5763eb20c14f")
+	)
+	(wire
+		(pts
 			(xy 143.51 129.54) (xy 133.35 129.54)
 		)
 		(stroke
@@ -2119,6 +2199,16 @@
 			(type default)
 		)
 		(uuid "5be14fe8-b91f-43c1-9a0b-99ca16d0dcb4")
+	)
+	(wire
+		(pts
+			(xy 114.3 66.04) (xy 113.03 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e2af14a-a6fb-40d6-b143-bcd21f72a6b8")
 	)
 	(wire
 		(pts
@@ -2242,7 +2332,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 71.12) (xy 154.94 71.12)
+			(xy 100.33 71.12) (xy 113.03 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2262,7 +2352,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 67.31) (xy 133.35 67.31)
+			(xy 100.33 67.31) (xy 113.03 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2439,6 +2529,16 @@
 			(type default)
 		)
 		(uuid "f0c0f181-d59b-4fb6-9486-40a2b7a6e86d")
+	)
+	(wire
+		(pts
+			(xy 113.03 71.12) (xy 154.94 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f534d9d7-2023-4950-9c1c-2bc1f48fbe84")
 	)
 	(wire
 		(pts
@@ -3131,36 +3231,11 @@
 				(thickness 0.254)
 				(bold yes)
 				(italic yes)
+				(color 0 0 0 1)
 			)
 			(justify left bottom)
 		)
 		(uuid "3cf66f9a-3a62-492e-a42d-1c05b1e8510d")
-	)
-	(label "D"
-		(at 148.59 71.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "49321f11-27e1-425d-aea9-b45bd5b17ec8")
-	)
-	(label "C"
-		(at 148.59 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "b3722620-c19b-46fa-a30b-efa50eb4b5f8")
 	)
 	(hierarchical_label "IN1{slash}EN"
 		(shape input)
@@ -3172,6 +3247,34 @@
 			(justify right)
 		)
 		(uuid "0213ae01-3935-496e-940e-45588ec68ae5")
+	)
+	(hierarchical_label "DCC-C"
+		(shape output)
+		(at 114.3 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left)
+		)
+		(uuid "1101e175-ff98-449e-bae0-102980377673")
+	)
+	(hierarchical_label "DCC-D"
+		(shape output)
+		(at 114.3 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left)
+		)
+		(uuid "309d6904-f431-4a1c-9ed5-80043cc80546")
 	)
 	(hierarchical_label "12V"
 		(shape input)
