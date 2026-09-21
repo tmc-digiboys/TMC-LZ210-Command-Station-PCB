@@ -145,9 +145,11 @@ Detailed information about the CDE interface is described on a separate page: [C
 
 The schematic for the LocoNet section is standard, and described in many places online. However, the values of a number of components have been adapted so that the whole works on 3V3 as well.
 
-Besides the LocoNet-T interface, a LocoNet-B interface is also present, which supplies a RailSync signal for boosters on the outer pins of the connector. Several driver ICs can be used to generate the RailSync signal; a number of options are listed in the schematic. Of the options listed, only the UCC27425 IC has an ENABLE input, allowing the RailSync signal to be easily disabled.
+In addition to the LocoNet-T interface, there is also a LocoNet-B interface, which supplies a RailSync signal for boosters via the outermost pins of the connector. The RailSync signal can be generated in several ways.
 
-33 Ω / 2 watt resistors are included on the driver outputs. On the one hand, these resistors act as short-circuit protection (which is why they need to be able to dissipate 2 watts). On the other hand, together with the 4.7 nF capacitors, these resistors form a low-pass filter, which reduces interference. The P6KE15A are ESD diodes that protect the LocoNet driver IC.
+- Up to and including V2.2, a design was used that was copied from the Internet (https://www.fucik.name/masinky/NanoL/, https://oshwlab.com/fiorinid/z21pg-by-df-pro). These circuits utilise a specialised driver IC; the diagram lists a number of options. Of the options listed, only the UCC27425 IC has an ENABLE input, which allows the RailSync signal to be easily disabled. Resistors rated at 33 Ω / 2 Watt (or preferably 22 Ω / 5 Watt) are connected to the outputs of this driver. On the one hand, these resistors serve as short-circuit protection (which is why they must be capable of dissipating 2 to 5 Watt). On the other hand, these resistors, together with the 4.7 nF capacitors, form a low-pass filter, thus reducing interference. The P6KE15A are ESD diodes that protect the LocoNet driver IC. The disadvantage of this circuit is that it cannot supply more than 100 mA, which limits the maximum number of boosters that can be connected to approximately 10, depending on the type of booster.
+
+- From version 2.3 onwards, RailSync uses the CD(E) (booster) signal. This not only reduces the number of components required (thereby lowering costs), but also allows a much larger number of boosters to be connected. Furthermore, all connected boosters now have exactly the same signal, regardless of whether they are connected via CDE or via LocoNet-T.
 
 </details>
 

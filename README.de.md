@@ -145,9 +145,11 @@ Ausführliche Informationen zur CDE-Schnittstelle sind auf einer eigenen Seite b
 
 Der Schaltplan für den LocoNet-Teil ist Standard und an vielen Stellen im Internet beschrieben. Allerdings wurden die Werte einiger Bauteile angepasst, sodass das Ganze auch mit 3V3 funktioniert.
 
-Neben der LocoNet-T-Schnittstelle ist auch eine LocoNet-B-Schnittstelle vorhanden, die an den äußeren Pins des Steckverbinders ein RailSync-Signal für Booster liefert. Zur Erzeugung des RailSync-Signals kann aus mehreren Treiber-ICs gewählt werden; im Schaltplan sind mehrere Optionen aufgeführt. Von den genannten Optionen besitzt nur das UCC27425-IC einen ENABLE-Eingang, mit dem sich das RailSync-Signal einfach abschalten lässt.
+Neben der LocoNet-T-Schnittstelle ist auch eine LocoNet-B-Schnittstelle vorhanden, die an den äußeren Pins des Steckers ein RailSync-Signal für Booster liefert. Die Erzeugung des RailSync-Signals ist auf verschiedene Arten möglich.
 
-An den Ausgängen des Treibers sind 33-Ω-/2-Watt-Widerstände vorgesehen. Zum einen dienen diese Widerstände als Kurzschlussschutz (deshalb müssen sie 2 Watt abführen können). Zum anderen bilden diese Widerstände zusammen mit den 4,7-nF-Kondensatoren einen Tiefpassfilter, der Störungen reduziert. Die P6KE15A sind ESD-Dioden, die das LocoNet-Treiber-IC schützen.
+- Bis einschließlich V2.2 wurde eine Schaltung verwendet, die aus dem Internet kopiert wurde (https://www.fucik.name/masinky/NanoL/, https://oshwlab.com/fiorinid/z21pg-by-df-pro). Diese Schaltungen nutzen einen speziellen Treiber-IC; im Schaltplan werden mehrere Optionen aufgeführt. Von den genannten Optionen verfügt nur der UCC27425-IC über einen ENABLE-Eingang, wodurch das RailSync-Signal einfach deaktiviert werden kann. An den Ausgängen dieses Treibers sind Widerstände mit 33 Ω / 2 Watt (oder besser: 22 Ω / 5 Watt) angeschlossen. Einerseits dienen diese Widerstände als Kurzschlussschutz (deshalb müssen sie 2 bis 5 Watt dissipieren können). Andererseits bilden diese Widerstände zusammen mit den 4,7-nF-Kondensatoren ein Tiefpassfilter, wodurch Störungen reduziert werden. Die P6KE15A sind ESD-Dioden, die den LocoNet-Treiber-IC schützen. Der Nachteil dieser Schaltung ist, dass sie nicht mehr als 100 mA liefern kann, wodurch die maximale Anzahl der anschließbaren Booster je nach Booster-Typ auf etwa 10 begrenzt ist.
+
+- Ab Version 2.3 wird für RailSync das CD(E)-Signal (Booster) verwendet. Dadurch werden nicht nur weniger Bauteile benötigt (was die Kosten senkt), sondern es kann auch eine viel größere Anzahl von Boostern angeschlossen werden. Außerdem verfügen nun alle angeschlossenen Booster über genau dasselbe Signal, unabhängig davon, ob sie über CDE oder über LocoNet-T angeschlossen sind.
 
 </details>
 
@@ -170,7 +172,7 @@ Der dort für das Senden genannte Transistor wurde jedoch durch einen MOSFET (IR
 
 
 ## Nachbau
-Für den Nachbau der Zentrale ist es am einfachsten, die aktuelle Platine fertigen zu lassen, indem die Datei [production/TMC-Centrale-V2.1.zip](production/TMC-Centrale-V2.1.zip) an ein Unternehmen wie JLCPCB gesendet wird. Diese Datei enthält alle (Gerber-)Dateien, die der Hersteller benötigt. Im Sommer 2026 kostete die Fertigung von 5 Platinen inklusive Versand etwa 25 €.
+Für den Nachbau der Zentrale ist es am einfachsten, die aktuelle Platine fertigen zu lassen, indem die Datei [production/TMC-Centrale.zip](production/TMC-Centrale.zip) an ein Unternehmen wie JLCPCB gesendet wird. Diese Datei enthält alle (Gerber-)Dateien, die der Hersteller benötigt. Im Sommer 2026 kostete die Fertigung von 5 Platinen inklusive Versand etwa 25 €.
 
 Der Entwurf ist Open Source. Nachbau, Anpassung und Weitergabe werden unter den Bedingungen der [Lizenz](LICENSE) ausdrücklich begrüßt, unter Angabe dieser Quelle.
 
@@ -273,7 +275,7 @@ Die Platine ist für folgende Steckverbinder ausgelegt:
 
 ## Software
 
-Die Firmware für diese Zentrale befindet sich in einem eigenen GitHub-Repository und wird hier daher nicht weiter besprochen (Link — **TODO**)
+Die Firmware für diese Zentrale befindet sich in einem eigenen GitHub-Repository (https://github.com/tmc-digiboys/TMC-LZ210-Command-Station) und wird daher hier nicht weiter besprochen.
 
 
 ## Vergleich mit anderen Zentralen

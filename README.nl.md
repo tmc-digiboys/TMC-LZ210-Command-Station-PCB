@@ -145,9 +145,11 @@ Gedetailleerde informatie betreffende het CDE interface is beschreven op een apa
 
 Het schema voor het LocoNet deel is standaard, en op veel plaatsen op het internet beschreven. Wel zijn de waarden van een aantal onderdelen aangepast zodat het geheel ook op 3V3 werkt.
 
-Naast de LocoNet-T interface, is ook een LocoNet-B interface aanwezig, die op de buitenste pinnen van de connector een RailSync signaal voor boosters levert. Voor het genereren van het RailSync signaal kan gekozen worden uit meerdere driver ICs; in het schema worden een aantal opties genoemd. Van de genoemde opties heeft alleen het UCC27425 IC een ENABLE ingang, waardoor het RailSync-signaal eenvoudig kan worden uitgeschakeld.
+Naast de LocoNet-T interface, is ook een LocoNet-B interface aanwezig, die op de buitenste pinnen van de connector een RailSync signaal voor boosters levert. Generatie van het RailSync signaal is op meerdere manieren mogelijk.
 
-Op de uitgangen van de driver zijn 33 Ω / 2 Watt weerstanden opgenomen. Enerzijds dienen deze weerstanden als kortsluitbeveiliging (daarom moeten ze 2 Watt kunnen dissiperen). Anderzijds vormen deze weerstanden, samen met de 4,7 nF condensatoren, een laagdoorlaat filter, waardoor storingen verminderd worden. De P6KE15A zijn ESD diodes die het LocoNet driver IC beschermen.  
+- Tot en met V2.2 werd gebruik gemaakt van een schakeling die gekopieerd is van het Internet (https://www.fucik.name/masinky/NanoL/, https://oshwlab.com/fiorinid/z21pg-by-df-pro). Deze schakelingen maken gebruik van een speciaal driver IC; in het schema worden een aantal opties genoemd. Van de genoemde opties heeft alleen het UCC27425 IC een ENABLE ingang, waardoor het RailSync-signaal eenvoudig kan worden uitgeschakeld. Op de uitgangen van deze driver zijn 33 Ω / 2 Watt (of beter: 22 Ω / 5 Watt) weerstanden opgenomen. Enerzijds dienen deze weerstanden als kortsluitbeveiliging (daarom moeten ze 2 tot 5 Watt kunnen dissiperen). Anderzijds vormen deze weerstanden, samen met de 4,7 nF condensatoren, een laagdoorlaat filter, waardoor storingen verminderd worden. De P6KE15A zijn ESD diodes die het LocoNet driver IC beschermen. Het nadeel van deze schakeling is dat het niet meer dan 100mA kan leveren, waardoor het maximum aantal aan te sluiten boosters beperkt is tot ongeveer 10, afhankelijk van het type booster.
+
+- Vanaf V2.3 wordt voor RailSync het CD(E) (booster) signaal gebruikt. Hierdoor zijn niet alleen minder componenten nodig (en worden de kosten verlaagd), maar kan ook een veel groter aantal boosters worden aangesloten. Daarnaast hebben nu alle aangesloten boosters exact hetzelfde signaal, onafhankelijk of ze zijn aangesloten via CDE of via LocoNet-T.
 
 </details>
 
@@ -170,7 +172,7 @@ De daarin vermelde transistor voor zenden is echter vervangen door een (IRLZ44) 
 
 
 ## Nabouwen
-Om de centrale na te bouwen, is het makkelijkst de huidige print te laten namaken door de file [production/TMC-Centrale-V2.1.zip](production/TMC-Centrale-V2.1.zip) te sturen naar een bedrijf zoals JLCPCB. Deze file bevat alle (Gerber) bestanden die de fabrikant nodig heeft. In de zomer van 2026 koste het laten maken van 5 printplaten inclusief verzending ongeveer €25.
+Om de centrale na te bouwen, is het makkelijkst de huidige print te laten namaken door de file [production/TMC-Centrale.zip](production/TMC-Centrale.zip) te sturen naar een bedrijf zoals JLCPCB. Deze file bevat alle (Gerber) bestanden die de fabrikant nodig heeft. In de zomer van 2026 koste het laten maken van 5 printplaten inclusief verzending ongeveer €25.
 
 Het ontwerp is open source. Nabouwen, aanpassen en verspreiden wordt aangemoedigd onder de voorwaarden van de [licentie](LICENSE), en met referentie naar deze bron.
 
@@ -273,7 +275,7 @@ De print is gemaakt voor de volgende connectoren
 
 ## Software
 
-De firmware voor deze centrale is te vinden in een eigen GitHub repository, en wordt hier dan ook niet verder besproken (link - **TODO**)
+De firmware voor deze centrale is te vinden in een eigen GitHub repository (zie https://github.com/tmc-digiboys/TMC-LZ210-Command-Station), en wordt hier dan ook niet verder besproken.
 
 
 ## Vergelijking met andere centrales
