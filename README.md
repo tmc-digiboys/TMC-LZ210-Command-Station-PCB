@@ -170,7 +170,7 @@ The transistor for transmitting mentioned there has, however, been replaced with
 
 
 ## Building
-To build the command station, the easiest approach is to have the current PCB manufactured by sending the file [production/TMC-Centrale-V2.1.zip](production/TMC-Centrale-V2.1.zip) to a company such as JLCPCB. This file contains all the (Gerber) files the manufacturer needs. In the summer of 2026, having 5 PCBs made, including shipping, cost approximately €25.
+To build the command station, the easiest approach is to have the current PCB manufactured by sending the file [production/TMC-Centrale.zip](production/TMC-Centrale.zip) to a company such as JLCPCB. This file contains all the (Gerber) files the manufacturer needs. In the summer of 2026, having 5 PCBs made, including shipping, cost approximately €25.
 
 The design is open source. Building, modifying, and distributing is encouraged under the terms of the [licence](LICENSE), and with reference to this source.
 
