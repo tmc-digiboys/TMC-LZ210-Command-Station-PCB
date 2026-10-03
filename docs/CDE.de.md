@@ -1,3 +1,5 @@
+[🇬🇧 English](CDE.md) | [🇩🇪 Deutsch](CDE.de.md) | [🇳🇱 Nederlands](CDE.nl.md)
+
 # CDE-Booster-Schnittstelle
 
 Im Gegensatz zu DCC selbst ist die CDE-Booster-Schnittstelle durch keinen RCN- oder NMRA-Standard definiert. Lenz, der Entwickler dieser Schnittstelle, hat zudem nur wenig technische Informationen dazu veröffentlicht. Im Internet finden sich jedoch verschiedene Schaltpläne für die Booster-Seite der Schnittstelle, darunter der [Z21PG Booster](https://pgahtow.de/w/Booster#/media/Datei:Booster_v2.png) und [Paco’s BoosteR-CDE](https://usuaris.tinet.cat/fmco/railcom_en.html#booster).

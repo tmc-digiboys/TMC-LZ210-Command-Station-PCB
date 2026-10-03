@@ -5,7 +5,7 @@
 
 Modular DCC command station with Ethernet and USB connectivity, and (partial) support for the XpressNet and Z21 protocols. The board supports LocoNet-T and XpressNet handhelds and other equipment, provides an interface for external boosters via CDE and LocoNet-B, and has a connection for RS-Bus feedback modules.
 
-![DCC Command Station](docs/images/DCC-CommandStation-LZ210-TMC.png)
+![DCC Command Station](docs/images/DCC-CommandStation-LZ210-TMC.jpg)
 
 
 ## Why this board
@@ -111,6 +111,8 @@ By default, the module is set to Quad-Level 2, but this can be changed via a sec
 No space has been reserved on the PCB for a snubber circuit and/or power inductor. If desired, these can be placed after the connector, in the wiring to the rails.
 
 Detailed background information on the choice and limitations of this driver IC is described on a separate page. That page discusses in detail the inrush-current problems that this and similar chips can have with capacitive loads. See: [DRV8874 output stage](docs/DRV8874.md)
+
+How overcurrent faults (OCP and ITRIP) show up on the **nFAULT** pin, how the processor handles them, and which value of the sense resistor is recommended, is described in [Dealing with nFAULTs](docs/nFault.md).
 
 </details>
 
@@ -287,7 +289,7 @@ This command station does not stand on its own, but stands in a long tradition o
 
 One of the earliest open-source DCC command stations is the [OpenDCC Z1](https://www.opendcc.de/elektronik/opendcc/opendcc.html). This command station was designed twenty years ago by Wolfgang Kufer.
 - **Processor.** OpenDCC runs on an 8-bit Atmel AVR (ATmega32 or ATmega644P) at 16 MHz. This command station uses a dual-core RP2350 at 125 MHz with a PIO peripheral, and is therefore orders of magnitude more powerful.
-- **Output stage.** OpenDCC uses a fixed H-bridge (STM L6206), theoretically rated at 2.8 A per output, but thermally limited on the PCB to about 1.5 A continuous. This command station uses a DRV8874 module (6 A theoretical), whose current is limited on the module itself to about 2.9 A.
+- **Output stage.** OpenDCC uses a fixed H-bridge (STM L6206), theoretically rated at 2.8 A per output, but thermally limited on the PCB to about 1.5 A continuous. This command station uses a DRV8874 module (6 A theoretical), whose current is limited on the module itself to about 2.7 A.
 - **Feedback.** OpenDCC supports S88, with an extension for turnout-position feedback. This command station uses RS-Bus and LocoNet.
 - **Connection to a PC.** OpenDCC communicates via RS232/USB with a PC, using XpressNet or P50X as the higher-layer protocol; OpenDCC itself has no network or WiFi connection. This command station has, in addition to USB, its own Ethernet connection, and supports XpressNet and Z21 as higher-layer protocols.
 - **Boosters.** OpenDCC has no separate interface for external boosters, such as CDE or LocoNet-B.
@@ -368,6 +370,7 @@ In principle it should also be possible to equip the command station with a WiFi
 
 - [Processor choice](docs/processor.md) — comparison of the RP2350 with ESP32, DxCore and STM32
 - [DRV8874 output stage](docs/DRV8874.md) — background on the chosen driver IC and inrush-current issues
+- [Dealing with nFAULTs](docs/nFault.md) — OCP and ITRIP faults, inrush handling and recommendations for the sense resistor
 - [CDE interface](docs/CDE.md) — background on the external booster interface
 
 </details>

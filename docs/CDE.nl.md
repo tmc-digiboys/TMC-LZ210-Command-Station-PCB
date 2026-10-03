@@ -1,3 +1,5 @@
+[🇬🇧 English](CDE.md) | [🇩🇪 Deutsch](CDE.de.md) | [🇳🇱 Nederlands](CDE.nl.md)
+
 # CDE Booster Interface
 
 Het CDE-boosterinterface is, in tegenstelling tot DCC zelf, niet vastgelegd in een RCN- of NMRA-norm. Ook Lenz, de ontwikkelaar van dit interface, heeft hierover weinig technische informatie gepubliceerd. Op internet zijn wel verschillende schema's voor de boosterkant van het interface te vinden, waaronder de [Z21PG Booster](https://pgahtow.de/w/Booster#/media/Datei:Booster_v2.png) en [Paco's BoosteR-CDE](https://usuaris.tinet.cat/fmco/railcom_en.html#booster).
@@ -15,7 +17,7 @@ Een legitieme vraag is of niet de DCC-spanning zelf, of een differentieel signaa
 
 ![CD booster ingang](images/CD-Basic-Schematics.png)
 
-Het schema bevat twee optocouplers. De bovenste is actief wanneer **C** positief is ten opzichte van **D**; de onderste wanneer **C** negatief is ten opzichte van **D**. Deze constructie met twee optocouplers is nodig omdat er drie te onderscheiden toestanden zijn: **C** hoger dan **D**, **C** lager dan **D**, en de RailCom-cutout, waarbij **C** gelijk is aan **D**.
+Het schema bevat twee snelle optocouplers (6N136). De bovenste is actief wanneer **C** positief is ten opzichte van **D**; de onderste wanneer **C** negatief is ten opzichte van **D**. Deze constructie met twee optocouplers is nodig omdat er drie te onderscheiden toestanden zijn: **C** hoger dan **D**, **C** lager dan **D**, en de RailCom-cutout, waarbij **C** gelijk is aan **D**.
 
 
 Cruciaal in deze schakeling is de weerstand van 1 kΩ die in serie staat met het **C**-signaal. Dit is meestal een weerstand met een vermogen van 250 mW. Bij een **CD** spanning van 12 V, valt ongeveer 10,4 V over deze weerstand (over de optocoupler valt een vaste voorwaartse spanning van V<sub>F</sub> = 1,6 V). De weerstand moet dan bijna 110 mW dissiperen. Bij **CD** = 16 V loopt dit op tot ruim 200 mW. Bij een spanning van 18 V of hoger wordt een 250 mW-weerstand dus overbelast.
@@ -24,7 +26,7 @@ Bij een spanning van **5 V** valt er nog maar **3,4 V** over de weerstand en bed
 
 ## Het E-signaal
 
-Het **E**-signaal kan door een booster worden gebruikt om kortsluiting te melden. Daartoe gebruiken zowel de Lenz- als de Paco-boosters een additionele optocoupler (zie het bovenstaande schema). Bij een kortsluiting wordt deze optocoupler ingeschakeld, waardoor stroom kan vloeien tussen **E** en **D**. Daarnaast is het mogelijk om tussen **E** en **M** (Masse = GND) een noodstopschakelaar aan te sluiten. Zie hiervoor de onderstaande afbeelding uit de handleiding van de Lenz LZV100.
+Het **E**-signaal kan door een booster worden gebruikt om kortsluiting te melden. Daartoe gebruiken zowel de Lenz- als de Paco-boosters een additionele optocoupler (zoals een PC817, zie het bovenstaande schema). Bij een kortsluiting wordt deze optocoupler ingeschakeld, waardoor stroom kan vloeien tussen **E** en **D**. Daarnaast is het mogelijk om tussen **E** en **M** (Masse = GND) een noodstopschakelaar aan te sluiten. Zie hiervoor de onderstaande afbeelding uit de handleiding van de Lenz LZV100.
 
 ![Not Aus](images/CDE-NOTAUS.png)
 

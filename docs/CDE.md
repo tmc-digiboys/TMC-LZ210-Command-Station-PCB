@@ -1,3 +1,5 @@
+[🇬🇧 English](CDE.md) | [🇩🇪 Deutsch](CDE.de.md) | [🇳🇱 Nederlands](CDE.nl.md)
+
 # CDE Booster Interface
 
 Unlike DCC itself, the CDE booster interface is not defined by any RCN or NMRA standard. Lenz, the developer of this interface, has also published very little technical information on the subject. However, various schematics for the booster side of the interface can be found online, including the [Z21PG Booster](https://pgahtow.de/w/Booster#/media/Datei:Booster_v2.png) and [Paco’s BoosteR-CDE](https://usuaris.tinet.cat/fmco/railcom_en.html#booster).

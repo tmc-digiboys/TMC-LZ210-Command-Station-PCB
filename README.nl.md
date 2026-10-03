@@ -5,7 +5,7 @@
 
 Modulair DCC command station met Ethernet- en USB-aansluiting, en (gedeeltelijke) ondersteuning voor het XpressNet- en Z21-protocol. Het board ondersteunt LocoNet-T- en XpressNet-handhelds en overige componenten, biedt een interface voor externe boosters via CDE en LocoNet-B, en heeft een aansluiting voor RS-Bus-terugmeldmodules.
 
-![DCC Command Station](docs/images/DCC-CommandStation-LZ210-TMC.png)
+![DCC Command Station](docs/images/DCC-CommandStation-LZ210-TMC.jpg)
 
 
 ## Waarom dit board
@@ -111,6 +111,8 @@ Standaard is de module ingesteld op Quad-Level 2, maar dat kan worden aangepast 
 Op de print is geen ruimte gereserveerd voor een snubberschakeling en/of power inductor. Indien gewenst kunnen die na de connector op de print in de bedrading naar de rails worden geplaatst.
 
 Gedetailleerde achtergrond informatie omtrent de keuze en de beperkingen van dit driver IC zijn beschreven op een aparte pagina. Op die pagina wordt uitgebreid ingegaan op de problemen met inschakelstromen die deze en vergelijkbare chips kunnen hebben bij capacitieve belastingen. Zie: [DRV8874 eindtrap](docs/DRV8874.nl.md)
+
+Hoe overstroomfouten (OCP en ITRIP) zich op de **nFAULT**-pin voordoen, hoe de processor daarmee omgaat en welke waarde van de sense-weerstand wordt aanbevolen, is beschreven in [Omgaan met nFAULTs](docs/nFault.nl.md).
 
 </details>
 
@@ -287,7 +289,7 @@ Deze centrale staat niet op zichzelf, maar staat in een lange traditie van open-
 
 Een van de eerste open-source DCC-centrales is de [OpenDCC Z1](https://www.opendcc.de/elektronik/opendcc/opendcc.html). Deze centrale is twintig jaar geleden ontworpen door Wolfgang Kufer.
 - **Processor.** OpenDCC draait op een 8-bit Atmel AVR (ATmega32 of ATmega644P) op 16 MHz. Deze centrale gebruikt een dual-core RP2350 op 125 MHz met een PIO-peripheral, en is daarmee ordes van grootte krachtiger.
-- **Eindtrap.** OpenDCC gebruikt een vaste H-brug (STM L6206), theoretisch geschikt voor 2,8 A per uitgang, maar thermisch op de print beperkt tot ongeveer 1,5 A continu. Deze centrale gebruikt een DRV8874-module (6 A theoretisch), waarvan de stroom op de module zelf wordt beperkt tot ongeveer 2,9 A.
+- **Eindtrap.** OpenDCC gebruikt een vaste H-brug (STM L6206), theoretisch geschikt voor 2,8 A per uitgang, maar thermisch op de print beperkt tot ongeveer 1,5 A continu. Deze centrale gebruikt een DRV8874-module (6 A theoretisch), waarvan de stroom op de module zelf wordt beperkt tot ongeveer 2,7 A.
 - **Terugmelding.** OpenDCC ondersteunt S88, met een uitbreiding voor wisselstand-terugmelding. Deze centrale gebruikt RS-Bus en LocoNet.
 - **Aansluiting op een PC.** OpenDCC communiceert via RS232/USB met een PC, en als hogere laag protocol XpressNet of P50X; een netwerk- of WiFi-verbinding kent OpenDCC zelf niet. Deze centrale heeft, naast USB, een eigen Ethernet-aansluiting, en ondersteunt als hogere laag protocol XpressNet en Z21.
 - **Boosters.** OpenDCC heeft geen apart interface voor externe boosters, zoals CDE of LocoNet-B.
@@ -368,6 +370,7 @@ In principe moet het ook mogelijk zijn de centrale van een WIFI interface te voo
 
 - [Processorkeuze](docs/processor.nl.md) — vergelijking RP2350 met ESP32, DxCore en STM32
 - [DRV8874 eindtrap](docs/DRV8874.nl.md) — achtergrond bij de gekozen driver-IC en inschakelstroomproblematiek
+- [Omgaan met nFAULTs](docs/nFault.nl.md) — OCP- en ITRIP-fouten, inschakelstroom en aanbevelingen voor de sense-weerstand
 - [CDE interface](docs/CDE.nl.md) — achtergrond bij de externe boosterinterface
 
 </details>

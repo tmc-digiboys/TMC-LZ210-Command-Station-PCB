@@ -5,7 +5,7 @@
 
 Diese modulare DCC-Zentrale verfügt über einen Ethernet- und einen USB-Anschluss sowie eine (teilweise) Unterstützung von XpressNet und Z21. Die Platine bietet Schnittstellen für LocoNet-T- und XpressNet-Handregler sowie weitere Geräte und unterstützt CDE und LocoNet-B. Über den RS-Bus können Rückmeldemodule angeschlossen werden.
 
-![DCC Command Station](docs/images/DCC-CommandStation-LZ210-TMC.png)
+![DCC Command Station](docs/images/DCC-CommandStation-LZ210-TMC.jpg)
 
 
 ## Warum diese Platine
@@ -111,6 +111,8 @@ Standardmäßig ist das Modul auf Quad-Level 2 eingestellt; dies kann über eine
 Auf der Platine ist kein Platz für eine Snubber-Schaltung und/oder eine Spule vorgesehen. Falls gewünscht, können diese nach dem Steckverbinder in der Verdrahtung zum Gleis platziert werden.
 
 Ausführliche Hintergrundinformationen zur Wahl und zu den Einschränkungen dieses Treiber-ICs sind auf einer eigenen Seite beschrieben. Dort wird ausführlich auf die Einschaltstrom-Probleme eingegangen, die dieser und ähnliche Chips bei kapazitiven Lasten haben können. Siehe: [DRV8874-Endstufe](docs/DRV8874.de.md)
+
+Wie sich Überstromfehler (OCP und ITRIP) am **nFAULT**-Pin äußern, wie der Prozessor damit umgeht und welcher Wert für den Sense-Widerstand empfohlen wird, ist in [Umgang mit nFAULTs](docs/nFault.de.md) beschrieben.
 
 </details>
 
@@ -287,7 +289,7 @@ Diese Zentrale steht nicht für sich allein, sondern in einer langen Tradition v
 
 Eine der ersten Open-Source-DCC-Zentralen ist die [OpenDCC Z1](https://www.opendcc.de/elektronik/opendcc/opendcc.html). Diese Zentrale wurde vor zwanzig Jahren von Wolfgang Kufer entworfen.
 - **Prozessor.** OpenDCC läuft auf einem 8-Bit-Atmel-AVR (ATmega32 oder ATmega644P) mit 16 MHz. Diese Zentrale verwendet einen Dual-Core-RP2350 mit 125 MHz und einem PIO-Peripheriegerät und ist dadurch um Größenordnungen leistungsfähiger.
-- **Endstufe.** OpenDCC verwendet eine feste H-Brücke (STM L6206), theoretisch für 2,8 A pro Ausgang ausgelegt, auf der Platine thermisch jedoch auf etwa 1,5 A Dauerstrom begrenzt. Diese Zentrale verwendet ein DRV8874-Modul (theoretisch 6 A), dessen Strom auf dem Modul selbst auf etwa 2,9 A begrenzt wird.
+- **Endstufe.** OpenDCC verwendet eine feste H-Brücke (STM L6206), theoretisch für 2,8 A pro Ausgang ausgelegt, auf der Platine thermisch jedoch auf etwa 1,5 A Dauerstrom begrenzt. Diese Zentrale verwendet ein DRV8874-Modul (theoretisch 6 A), dessen Strom auf dem Modul selbst auf etwa 2,7 A begrenzt wird.
 - **Rückmeldung.** OpenDCC unterstützt S88, mit einer Erweiterung für die Weichenstellungs-Rückmeldung. Diese Zentrale verwendet RS-Bus und LocoNet.
 - **Anschluss an einen PC.** OpenDCC kommuniziert über RS232/USB mit einem PC, mit XpressNet oder P50X als übergeordnetes Protokoll; eine Netzwerk- oder WLAN-Verbindung besitzt OpenDCC selbst nicht. Diese Zentrale verfügt neben USB über einen eigenen Ethernet-Anschluss und unterstützt XpressNet und Z21 als übergeordnetes Protokoll.
 - **Booster.** OpenDCC besitzt keine eigene Schnittstelle für externe Booster wie CDE oder LocoNet-B.
@@ -368,6 +370,7 @@ Grundsätzlich sollte es auch möglich sein, die Zentrale mit einer WLAN-Schnitt
 
 - [Prozessorwahl](docs/processor.de.md) — Vergleich des RP2350 mit ESP32, DxCore und STM32
 - [DRV8874-Endstufe](docs/DRV8874.de.md) — Hintergrund zur Wahl des Treiber-ICs und zur Einschaltstrom-Problematik
+- [Umgang mit nFAULTs](docs/nFault.de.md) — OCP- und ITRIP-Fehler, Einschaltstrom und Empfehlungen für den Sense-Widerstand
 - [CDE-Schnittstelle](docs/CDE.de.md) — Hintergrund zur externen Boosterschnittstelle
 
 </details>
